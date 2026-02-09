@@ -211,7 +211,7 @@ export default function ManagerOrderDetailPage({
                         </div>
                         <div className="flex justify-between">
                           <span className="text-sm text-muted-foreground">
-                            납기일
+                            납기요청일
                           </span>
                           <span className="text-sm">
                             {item.deliveryDate}

@@ -130,10 +130,7 @@ export default function NewOrderPage() {
         newErrors[`${item.id}-quantity`] = "수량을 입력하세요";
       }
       if (!item.deliveryDate) {
-        newErrors[`${item.id}-deliveryDate`] = "납기일을 선택하세요";
-      }
-      if (!item.poRequestDate) {
-        newErrors[`${item.id}-poRequestDate`] = "발주요청일을 선택하세요";
+        newErrors[`${item.id}-deliveryDate`] = "납기요청일을 선택하세요";
       }
     });
 
@@ -235,9 +232,7 @@ export default function NewOrderPage() {
                     <TableHead>카테고리</TableHead>
                     <TableHead className="w-28">주문수량</TableHead>
                     <TableHead className="w-24">단위</TableHead>
-                    <TableHead className="w-36">납기일</TableHead>
-                    <TableHead className="w-36">요청일자</TableHead>
-                    <TableHead className="w-36">발주요청일</TableHead>
+                    <TableHead className="w-36">납기요청일</TableHead>
                     <TableHead className="w-14">삭제</TableHead>
                   </TableRow>
                 </TableHeader>
@@ -245,7 +240,7 @@ export default function NewOrderPage() {
                   {items.length === 0 ? (
                     <TableRow>
                       <TableCell
-                        colSpan={10}
+                        colSpan={8}
                         className="py-8 text-center text-muted-foreground"
                       >
                         품목을 추가해주세요
@@ -313,38 +308,6 @@ export default function NewOrderPage() {
                             className={cn(
                               "h-8",
                               errors[`${item.id}-deliveryDate`] &&
-                                "border-destructive"
-                            )}
-                          />
-                        </TableCell>
-                        <TableCell>
-                          <Input
-                            type="date"
-                            value={item.requestDate}
-                            onChange={(e) =>
-                              updateItem(
-                                item.id,
-                                "requestDate",
-                                e.target.value
-                              )
-                            }
-                            className="h-8"
-                          />
-                        </TableCell>
-                        <TableCell>
-                          <Input
-                            type="date"
-                            value={item.poRequestDate}
-                            onChange={(e) =>
-                              updateItem(
-                                item.id,
-                                "poRequestDate",
-                                e.target.value
-                              )
-                            }
-                            className={cn(
-                              "h-8",
-                              errors[`${item.id}-poRequestDate`] &&
                                 "border-destructive"
                             )}
                           />

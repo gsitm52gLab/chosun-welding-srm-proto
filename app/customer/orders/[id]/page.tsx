@@ -190,9 +190,8 @@ export default function CustomerOrderDetailPage({
                   <TableHead>AWS</TableHead>
                   <TableHead>주문수량</TableHead>
                   <TableHead>단위</TableHead>
+                  <TableHead>납기요청일</TableHead>
                   <TableHead>납기일</TableHead>
-                  <TableHead>요청일자</TableHead>
-                  <TableHead>발주요청일</TableHead>
                 </TableRow>
               </TableHeader>
               <TableBody>
@@ -210,9 +209,8 @@ export default function CustomerOrderDetailPage({
                     </TableCell>
                     <TableCell>{item.quantity.toLocaleString()}</TableCell>
                     <TableCell>{item.unit}</TableCell>
-                    <TableCell>{item.deliveryDate}</TableCell>
                     <TableCell>{item.requestDate}</TableCell>
-                    <TableCell>{item.poRequestDate}</TableCell>
+                    <TableCell>{item.deliveryDate || "-"}</TableCell>
                   </TableRow>
                 ))}
               </TableBody>
