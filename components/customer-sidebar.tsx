@@ -22,7 +22,7 @@ export function CustomerSidebar() {
           <span className="text-sm font-bold text-primary-foreground">CS</span>
         </div>
         <div>
-          <p className="text-sm font-bold text-sidebar-foreground">조선선강 SRM</p>
+          <p className="text-sm font-bold text-sidebar-foreground">조선선재 SRM</p>
         </div>
       </div>
 

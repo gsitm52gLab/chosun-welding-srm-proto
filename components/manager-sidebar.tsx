@@ -22,7 +22,7 @@ export function ManagerSidebar() {
           <span className="text-sm font-bold text-primary-foreground">CS</span>
         </div>
         <div className="flex items-center gap-2">
-          <p className="text-sm font-bold text-sidebar-foreground">조선선강 SRM</p>
+          <p className="text-sm font-bold text-sidebar-foreground">조선선재 SRM</p>
           <Badge variant="secondary" className="bg-primary/20 text-xs text-primary">
             관리자
           </Badge>

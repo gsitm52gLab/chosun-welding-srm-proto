@@ -23,7 +23,7 @@ export function AppHeader({ title, userName, companyName }: AppHeaderProps) {
             </AvatarFallback>
           </Avatar>
           <span className="text-sm text-muted-foreground">
-            {companyName ? `${companyName} ${userName}님` : `조선선강 ${userName}님`}
+            {companyName ? `${companyName} ${userName}님` : `조선선재 ${userName}님`}
           </span>
         </div>
         <Link href="/">

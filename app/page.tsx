@@ -30,7 +30,7 @@ export default function LoginPage() {
           <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
             <span className="text-lg font-bold text-primary-foreground">CS</span>
           </div>
-          <h1 className="text-2xl font-bold text-foreground">조선선강</h1>
+          <h1 className="text-2xl font-bold text-foreground">조선선재</h1>
         </div>
         <p className="text-sm text-muted-foreground">SRM 주문관리 시스템</p>
       </div>
@@ -107,7 +107,7 @@ export default function LoginPage() {
             </CardContent>
             <CardFooter>
               <p className="w-full text-center text-xs text-muted-foreground">
-                조선선강 내부 직원 전용입니다
+                조선선재 내부 직원 전용입니다
               </p>
             </CardFooter>
           </TabsContent>
@@ -115,7 +115,7 @@ export default function LoginPage() {
       </Card>
 
       <footer className="mt-8 text-xs text-muted-foreground">
-        &copy; 2025 조선선강. All rights reserved.
+        &copy; 2025 조선선재. All rights reserved.
       </footer>
     </div>
   );
